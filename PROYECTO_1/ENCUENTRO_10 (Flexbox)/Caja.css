@@ -1,0 +1,38 @@
+.box {
+    display: inline-flex;
+    flex-flow: row nowrap ;
+    justify-content:center;
+    align-content:center ;
+    align-items:center;
+    background-color: whitesmoke;
+    width: 1080px;
+    height: 720px;
+    margin: 10px;
+  }
+
+  .box div.A {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: ;
+    width: 400px;
+    height: 400px;
+    background-color: teal;
+    margin: 5px
+    }
+
+  .box div.B {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: ;
+    width: 400px;
+    height: 400px;  
+    background-color: teal;
+    margin: 5px;
+    }
+  
+  @media screen and (max-width: 800px) {
+    .box{
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+  }

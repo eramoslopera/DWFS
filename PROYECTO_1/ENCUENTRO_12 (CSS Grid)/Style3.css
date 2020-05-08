@@ -1,0 +1,48 @@
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1px;
+  max-width: 800px;
+  height: 800px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background-color: lightgray;
+  border: solid black;
+  text-align: center;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 6;
+  background-color: lightgray;
+  border: solid black;
+  text-align: center;
+
+}
+
+.main {
+  grid-column: 2 / 4;
+  grid-row: 2 / 6;
+  background-color: lightgray;
+  border: solid black;
+  text-align: center;
+
+}
+
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 6;
+  background-color: lightgray;
+  border: solid black;
+  text-align: center;
+
+}
+
+
+
+
+

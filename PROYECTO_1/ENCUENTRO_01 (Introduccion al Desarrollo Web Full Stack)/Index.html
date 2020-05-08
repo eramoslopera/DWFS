@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Mi primera Web</title>
+    <style>
+        body{ background-color: darkgray; }
+        h1{ color: red; }
+        h6{ padding-left: 20px; }
+        p{ background-color: black; color: white}
+    </style>
+</head>
+<body>
+    <h1 id="nombre">Esteban Ramos Lopera</h1>
+    <h6 id="fecha_nacimiento">13/08/1989</h6>
+    <p id="descripcion">Me llamo Esteban Ramos tengo 30 años y vivo en la ciudad de Medellin Colombia</p>
+</body>
+</html>
+<script>
+    nombre = document.getElementById('nombre');
+    nombre.addEventListener("click", function(){ alert("Bienvenido a mi sitio Web ") } );
+
+    descripcion = document.getElementById('descripcion');
+    descripcion.addEventListener("mouseenter", function(){
+        descripcion.style.color = "black";
+        descripcion.style.backgroundcolor = "white";
+    });
+
+    descripcion.addEventListener("mouseout", function(){
+        descripcion.style.color = "white";
+        descripcion.style.backgroundcolor = "black";
+    });      
+</script>

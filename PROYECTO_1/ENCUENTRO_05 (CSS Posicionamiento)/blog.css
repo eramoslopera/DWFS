@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: Gray;
+ }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    padding: 5px 30px;
+    border-bottom: 2px solid orange ;
+}
+
+header .logo { 
+    float: left;
+}
+header h1 {
+    font-family: Frontage;
+    float: left;
+    margin-left: 10px;
+    line-height: 60px;
+}
+
+header nav {
+    font-family: Montserrat;
+    float: right;
+}
+
+header nav li {
+    display: inline;
+    padding-left: 10px;
+    list-style: none;
+    line-height: 60px;
+    color: #000;
+}
+
+header nav li:hover {
+    color: orange;
+    transition: all 1s ease;
+}
+
+main {
+    padding-top:  50px;
+}
+h2 {
+    color:orange;
+    font-family: Frontage;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+}
+p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+/*Estilo boton*/
+.btn{
+    margin: 20px auto;
+    width: 80px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient( 109.6deg,  Orange 11.2%, orange 91.1% );
+    border-radius: 5px;
+    border: 2px solid orange;
+}
+/*efecto hover en el boton*/
+.btn:hover{
+    border: 2px solid orange;
+    color: #000;
+    background: none;
+}
+
+.articuloIzquierdo {
+    float: left;
+    width: 50%;
+}
+.articuloDerecho {
+    display: inline-block;
+    width: 50%;
+}
+.articleContainer {
+    padding: 40px 10px;
+}
+
+form {
+    border-radius: 5px;
+    border:2px  solid orange ;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+label, button, input {
+    font-family: Montserrat;
+    width: 100%;
+    display: block;
+    margin-top: 5px
+}
+input{
+    padding: 10px;
+}
+form .btn{
+  width: 100%;
+  margin: 15px 0;
+}
